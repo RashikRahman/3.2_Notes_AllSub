@@ -1,4 +1,6 @@
 void setup() {
+  //There are 14 digital pins and  6 analog pins in arduino.
+  //This pin numbers must be declared to work with arduino and these pin numbers are declared in this section.
   pinMode(13,OUTPUT); //(pin number, status [OUTPUT or INPUT]
 }
 
