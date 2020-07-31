@@ -1,52 +1,36 @@
-void Transfer(int b);
-void Not(int b);
+void Transfer(int x);
+void Not(int x);
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode (0, INPUT);
-  pinMode (1, INPUT);
-  pinMode(4, INPUT); // If high then do transfer else not
-  pinMode (13, OUTPUT);
-  pinMode (12, OUTPUT);
-}
+  pinMode(1, INPUT); //set the input pin
+  pinMode(2, INPUT); //set the switch or control pin for transfer, not operation
+  pinMode(13, OUTPUT); //set the output pin
 
+}
 
 void loop() {
   // put your main code here, to run repeatedly:
+  int value = digitalRead(1);
+  int control = digitalRead(2);
 
-  int a = digitalRead(0);
-  int b = digitalRead(1);
-  int c = digitalRead(4);
+  if (control == HIGH)
+    Transfer(value);
+  else
+    Not(value);
 
-  if (c == HIGH) {
-    Transfer(a);
-  }
-  else {
-    Not(b);
-  }
 }
 
-void Transfer(int b) {
-  if (b == HIGH)
-  {
+
+void Transfer(int x) {
+  if (x == HIGH)
     digitalWrite(13, HIGH);
-
-  }
   else
-  {
     digitalWrite(13, LOW);
-  }
-
 }
-
-void Not(int a) {
-  if (a == HIGH)
-  {
-    digitalWrite(12, LOW);
-
-  }
+void Not(int x){
+  if (x == HIGH)
+    digitalWrite(13, LOW);
   else
-  {
-    digitalWrite(12, HIGH);
-  }
+    digitalWrite(13, HIGH);
 }
