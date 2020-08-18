@@ -159,44 +159,44 @@ void loop() {
  digitalWrite(red,1);
  delay(1000);
 
-  //4
-  digitalWrite(led1,0);
- digitalWrite(led2,1);
- digitalWrite(led3,1);
- digitalWrite(led4,0);
- digitalWrite(led5,0);
- digitalWrite(led6,1);
- digitalWrite(led7,1);
- digitalWrite(green,0);
- digitalWrite(yellow,1);
- digitalWrite(red,0);
- delay(1000);
-
- //3
-  digitalWrite(led1,1);
- digitalWrite(led2,1);
- digitalWrite(led3,1);
- digitalWrite(led4,1);
- digitalWrite(led5,0);
- digitalWrite(led6,0);
- digitalWrite(led7,1);
- digitalWrite(green,0);
- digitalWrite(yellow,1);
- digitalWrite(red,0);
- delay(1000);
-
- //2
-  digitalWrite(led1,1);
- digitalWrite(led2,1);
- digitalWrite(led3,0);
- digitalWrite(led4,1);
- digitalWrite(led5,1);
- digitalWrite(led6,0);
- digitalWrite(led7,1);
- digitalWrite(green,0);
- digitalWrite(yellow,1);
- digitalWrite(red,0);
- delay(1000);
+//  //4
+//  digitalWrite(led1,0);
+// digitalWrite(led2,1);
+// digitalWrite(led3,1);
+// digitalWrite(led4,0);
+// digitalWrite(led5,0);
+// digitalWrite(led6,1);
+// digitalWrite(led7,1);
+// digitalWrite(green,0);
+// digitalWrite(yellow,1);
+// digitalWrite(red,0);
+// delay(1000);
+//
+// //3
+//  digitalWrite(led1,1);
+// digitalWrite(led2,1);
+// digitalWrite(led3,1);
+// digitalWrite(led4,1);
+// digitalWrite(led5,0);
+// digitalWrite(led6,0);
+// digitalWrite(led7,1);
+// digitalWrite(green,0);
+// digitalWrite(yellow,1);
+// digitalWrite(red,0);
+// delay(1000);
+//
+// //2
+//  digitalWrite(led1,1);
+// digitalWrite(led2,1);
+// digitalWrite(led3,0);
+// digitalWrite(led4,1);
+// digitalWrite(led5,1);
+// digitalWrite(led6,0);
+// digitalWrite(led7,1);
+// digitalWrite(green,0);
+// digitalWrite(yellow,1);
+// digitalWrite(red,0);
+// delay(1000);
 
  //1
   digitalWrite(led1,0);
