@@ -44,6 +44,12 @@ void setup()
   TIMSK1 = 1;  // enable Timer1 overflow interrupt
  
 }
+
+
+//What is an interrupt?
+//The program running on a controller is normally running sequentially instruction by instruction. 
+//An interrupt is an external event that interrupts the running program and runs a special interrupt service routine (ISR). 
+//After the ISR has been finished, the running program is continued with the next instruction. Instruction means a single machine instruction, not a line of C or C++ code.
  
 ISR(TIMER1_OVF_vect)   // Timer1 interrupt service routine (ISR)
 {
