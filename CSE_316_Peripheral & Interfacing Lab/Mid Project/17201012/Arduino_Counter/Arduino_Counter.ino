@@ -85,9 +85,10 @@ void loop()
 {
   if(digitalRead(button) == 0)
   {
-    count++;  // increment 'count' by 1
-    if(count == 9999)
-      count = 0;
+//    count++;  // increment 'count' by 1
+//    if(count == 9999)
+//      count = 0;
+    count=9999;
     delay(200);  // wait 200 milliseconds
   }
 }
